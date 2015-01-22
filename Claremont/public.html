@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="imagetoolbar" content="no" >
+    <meta name="classification" content="Internet" >
+    <meta name="resource-type" content="document" >
+    <meta name="distribution" content="Global" >
+    <meta name="doc-class" content="Completed" >
+    <meta name="doc-rights" content="Public" >
+    <meta name="doc-rights" content="Public" >
+    <meta name="rating" content="General" >
+    <meta name="description" content="" >
+    <meta name="language" content="en" >
+    <meta name="robots" content="ALL" >
+    <meta name="keywords" content="" >
+    
+    <!-- Required JS -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="js/jquery.html5-placeholder-shim.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/simpleweather.js"></script>
+    <script type="text/javascript" src="js/private_side.js"></script>
+    <script type="text/javascript" src="js/paginator.js"></script>
+    <script type="text/javascript" src="js/store.min.js"></script>
+    <script type="text/javascript" src="http://design02.memfirstweb.net/custom/js/global.v1.0.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Required CSS -->
+    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" type="text/css" href="http://design02.memfirstweb.net/custom/css/global.v1.0.css" />
+    <!-- Custom CSS -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Lato:400,300,300italic,400italic,700'>
+    <link rel="stylesheet" type='text/css' href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+</head>
+<body>
+    <!--[if lt IE 7 ]> <div class="ie6"> <![endif]-->
+    <!--[if IE 7 ]>    <div class="ie7"> <![endif]-->
+    <!--[if IE 8 ]>    <div class="ie8"> <![endif]-->
+    <!--[if IE 9 ]>    <div class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--> <div class="notie"> <!--<![endif]-->
+        <div id="website" class="public">  
+
+            <div class="closeLogin" style="display: none;"></div>
+            <div class="memberLogin" style="display: none;">
+                <div class="arrow"></div>
+                <h2>Member Login</h2>
+                <div class="closeButton"><i class="fa fa-times fa-2x"></i></div>
+                <form class="login" method="post" name="memberLogin" action="/club/scripts/login/login_validate.asp" id="memberLogin">
+                    <input type="text" value="" name="user" id="login-username" class="username" placeholder="Username">
+                    <input type="password" value="" name="pw" id="login-password" class="password" placeholder="Password">
+                    <input type="checkbox" value="Remember me" id="login-remember" name="save_login" class="remember">
+                    <label class="remember" for="login-remember">Keep me logged in</label>
+                    <p class="help">
+                        <a href="/club/scripts/login/login.asp">
+                            Login Help?&nbsp;&nbsp;<i class="fa fa-question-circle fa-2x"></i>
+                        </a>
+                    </p>
+                    <input type="submit" value="Log In &raquo;" name="MemEnter" id="login-submit" class="submit">
+                    
+                </form>
+                <div class="membership">
+                    <span>Not a Member?</span> &nbsp;&nbsp;
+                    <a href="#1">Let's change that &raquo; </a>
+                </div>
+            </div>
+
+
+            <div class="header">
+                <div class="wrap wider">
+                    
+                    <ul class="navigation">
+                        <li><a href="#1" title="Home">Home</a></li>
+                        <li class="active"><a href="#1" title="About Claremont">About Claremont</a></li>
+                        <li><a href="#1" title="Weddings & Events">Weddings &amp; Events</a></li>
+                        <li><a href="#1" title="Golf">Golf</a></li>
+                    </ul>
+                    <a href="#1" class="logo" title="">
+                        <img src="images/logo.png" alt="Logo"/>
+                    </a>
+                    <ul class="navigation right">
+                        <li><a href="#1" title="Tennis">Tennis</a></li>
+                        <li><a href="#1" title="Aquatics">Aquatics</a></li>
+                        <li><a href="#1" title="Fitness">Fitness</a></li>
+                        <li><a href="#1" title="Membeship">Membeship</a></li>
+                        <li><a class="bt-member-login" href="#" title="Login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-banner">
+                <div class="images" style="background-image: url('images/img_pub_banner.jpg')"></div>
+                <div class="mask-banner"></div>
+            </div>
+
+            <div class="main">
+                <div class="wrap">
+                    <div id="sidebar">
+                        <ul class="sidebar-nav">
+                            <li>
+                                <a href="#1" title="Left Navigation Item">Left Navigation Item</a>
+                            </li>
+                            <li>
+                                <a href="#1" title="Item Short">Item Short</a>
+                            </li>
+                            <li class="active">
+                                <a href="#1" title="Active and Expanded">Active and Expanded</a>
+                                <ul class="sub">
+                                    <li><a href="#1">Sub navigation Items</a></li>
+                                    <li><a href="#1">Short Sub Items</a></li>
+                                    <li><a href="#1">Item Little Longer</a></li>
+                                    <li><a href="#1">Sub Nav Item Much Longer</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#1" title="Left Nav Continues">Left Nav Continues</a>
+                            </li>
+                            <li>
+                                <a href="#1" title="Last Nav Item">Last Nav Item</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-right">
+
+                        <h1>About Claremont</h1>
+
+                        <div class="text">
+                            <img class="side-image" src="http://placehold.it/180x150" alt="">
+                            
+
+                            <p>Nunc lacinia tincidunt erat eget faucibus. Integer tortor lorem, aliquam non mattis et, blandit id purus. Donec molestie accumsan leo, ut feugiat libero fermentum vel. Curabitur vestibulum augue vitae nisi molestie lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href="#1">Donec sed sem orci</a>. Praesent imperdiet blandit eros, eu pellentesque sem accumsan ut. Aliquam facilisis purus a risus varius quis lacinia turpis gravida.</p>
+
+                            <h2>Sub Title</h2>
+
+                            <p>Proin eget lacinia lectus. Aliquam erat volutpat. Nulla ornare risus at orci rhoncus vel scelerisque tortor venenatis. Vestibulum quis ante non purus euismod pulvinar a sit amet urna. Vestibulum mattis nulla tellus. Aliquam condimentum eleifend ipsum, a ornare purus ullamcorper sit amet. Nulla tristique massa quis erat adipiscing porttitor. Quisque congue porta erat non fermentum. In hac habitasse platea dictumst. Etiam eget erat a felis vestibulum facilisis vitae non nibh. Donec augue libero, blandit sit amet condimentum malesuada, dictum sagittis risus. Vivamus volutpat lectus ac nulla accumsan quis molestie lacus porttitor. Suspendisse ac lacus eu neque volutpat rutrum eget sed nibh. Proin condimentum suscipit justo luctus elementum. Sed a metus non orci cursus porta et malesuada enim.</p>
+                            
+                            <p><strong>Nulla dolor tellus, ornare id convallis ac, ornare a quam. Fusce diam nunc, ultrices ac porttitor sed, vehicula vitae sem. Fusce euismod, velit at tincidunt faucibus diam dolor. </strong></p>
+
+                            <blockquote>“This is an example of a testimonial or any blockquote text. Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio”</blockquote>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrap">
+                    <div class="club-info"> 
+                        <img src="images/logo_foot.png" alt="Logo">
+                        <p>5295 Broadway Terrace | Oakland, California 94618 <br>
+                           Clubhouse: (510) 653-6789 | Email: info@claremontcountryclub.org</p>
+                    </div>
+                    <div id="box-search">
+                        <form method="post" action="/club/scripts/search/search.asp?NS=MYLOCKER">
+                            <input type="text" name="SRCH_TEXT" id="SRCH_TEXT" placeholder="Search" value="">
+                            <input type="image" src="images/magnifier.png" class="bt-search" value="">
+                        </form>
+                    </div>                
+                </div>
+                <div class="wrap-nav-footer">
+                    <div class="wrap">
+                        <ul class="nav-footer">
+                            <li><a href="/" title="Home">Home</a></li>
+                            <li><a href="#1" title="About Us">About Us</a></li>
+                            <li><a href="#1" title="Wedding & Events">Wedding & Events</a></li>
+                            <li><a href="#1" title="Tennis">Tennis</a></li>
+                            <li><a href="#1" title="Aquatics">Aquatics</a></li>
+                            <li><a href="#1" title="Fitness">Fitness</a></li>
+                            <li><a href="#1" title="Membership">Membership</a></li>
+                            <li><a href="#1" class="bt-member-login" title="Login">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="social-icons">
+                        <a href="#"> <i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-twitter-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <p class="copyright">
+                        Copyright &copy; [CURRENT_DATE_YEAR] by <TOKEN:CLUB_NAME>. All Rights Reserved. Club Websites by <a href="http://www.membersfirst.com" target="_blank">MembersFirst, Inc</a> | <a href="http://www.membersfirst.com/usage.htm" target="_blank">Terms of Use</a> | <a href="http://www.membersfirst.com/privacy.htm" target="_blank">Privacy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
