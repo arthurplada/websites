@@ -1,0 +1,44 @@
+.album-img img {
+    width: 100%;
+    cursor: pointer;
+}
+.well-mf .row-fluid .span8-photo-albums {
+    width: 71%;
+    margin-left: 4%;   
+}
+.album-info h4 {
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+.album-info .album-count {
+    margin-bottom: 3px;
+}
+.album-info .album-count .label {
+    
+}
+.album-info .album-view-btn {
+    margin-top: 10px;
+}
+.well-mf {
+    margin-bottom: 10px;
+    padding: 6%;
+}
+
+
+
+.box-photo-album-pictures {
+    display: block;
+    margin-top: 15px;
+}
+.box-photo-album-pictures a {
+    width: 30%;
+    display: block;
+    border: 1px solid #3C3C3C;
+    margin: 1%;
+    float: left;
+}
+.box-photo-album-pictures a img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

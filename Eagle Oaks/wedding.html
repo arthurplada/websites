@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wedding & Events</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="imagetoolbar" content="no" >
+    <meta name="classification" content="Internet" >
+    <meta name="resource-type" content="document" >
+    <meta name="distribution" content="Global" >
+    <meta name="doc-class" content="Completed" >
+    <meta name="doc-rights" content="Public" >
+    <meta name="doc-rights" content="Public" >
+    <meta name="rating" content="General" >
+    <meta name="description" content="" >
+    <meta name="language" content="en" >
+    <meta name="robots" content="ALL" >
+    <meta name="keywords" content="" >
+    
+    <!-- Required JS -->
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="js/jquery.html5-placeholder-shim.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/simpleweather.js"></script>
+    <script type="text/javascript" src="js/private_side.js"></script>
+    <script type="text/javascript" src="js/paginator.js"></script>
+    <script type="text/javascript" src="js/store.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Required CSS -->
+    <link rel="stylesheet" type="text/css" href="/custom/js/fancybox/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <!-- Custom CSS -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,300|Caudex:400,700,400italic' >
+    <link rel="stylesheet" type='text/css' href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+</head>
+<body>
+    <!--[if lt IE 7 ]> <div class="ie6"> <![endif]-->
+    <!--[if IE 7 ]>    <div class="ie7"> <![endif]-->
+    <!--[if IE 8 ]>    <div class="ie8"> <![endif]-->
+    <!--[if IE 9 ]>    <div class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--> <div class="notie"> <!--<![endif]-->
+        <div id="website" class="wedding">  
+
+            <div class="closeLogin" style="display: none;"></div>
+            
+            <div class="memberLogin" style="display: none;">
+                <div class="wrap-login">
+                    <div class="arrow"></div>
+                    <h2>MEMBER LOGIN</h2>
+                    <div class="double-lines"></div>
+                    <div class="closeButton"></div>
+                    <form class="login" method="post" name="memberLogin" action="/club/scripts/login/login_validate.asp" id="memberLogin">
+                        <input type="text" value="" name="user" id="login-username" class="username" placeholder="Username">
+                        <input type="password" value="" name="pw" id="login-password" class="password" placeholder="Password">
+                        <input type="checkbox" value="Remember me" id="login-remember" name="save_login" class="remember">
+                        <label class="remember" for="login-remember">Keep me logged in</label>
+                        <input type="submit" value="Login" name="MemEnter" id="login-submit" class="submit">
+                        <p class="help">
+                            <a href="/club/scripts/login/login.asp">
+                                <img src="images/login-help.png">&nbsp;&nbsp;Help?
+                            </a>
+                        </p>
+                    </form>
+                    <div class="membership">
+                        <a href="#1">
+                            Learn More About Membership<br> 
+                            <span>Learn More Today &raquo;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+
+
+            <div class="header">    
+                <div class="wrap-header">      
+                    <a href="#1" class="logo" title="">
+                        <img src="images/logo.png" alt="Logo"/>
+                    </a>   
+                    <ul class="navigation left">
+                        <li><a href="#1" title="Wedding & Events">Wedding &amp; Events</a></li>
+                        <li class="active"><a href="#1" title="Membership">Membership</a></li>
+                    </ul> 
+                    <ul class="navigation right">
+                        <li><a href="#1" title="Amenities">Amenities</a></li>
+                        <li><a href="#1" title="About Us">About Us</a></li>
+                        <li><a href="#1" class="bt-member-login" title="Member Login">Login <i class="fa fa-sign-in fa-lg"></i></a></li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="wrap-slideshow">
+                <div class="cycle-slideshow slideshow"  
+                    data-cycle-pager=".nav-slider" 
+                    data-cycle-speed="400" 
+                    data-cycle-slides="> div"
+                    data-cycle-pause-on-hover="true"
+                    data-cycle-timeout=0
+                    >
+                    <div class="slide" style="background: url(http://placehold.it/1920x482) no-repeat center top"></div>
+                    <div class="slide" style="background: url(http://placehold.it/1920x482) no-repeat center top"></div>
+                </div>
+                <div class="nav-slider"></div>
+            </div>
+
+            <div class="main">
+                <div class="wrap">
+                    <div id="sidebar">
+                        <ul class="sidebar-nav">
+                            <li>
+                                <a href="#1" title="Left Navigation Item">Left Navigation Item</a>
+                            </li>
+                            <li>
+                                <a href="#1" title="Item Short">Item Short</a>
+                            </li>
+                            <li class="active">
+                                <a href="#1" title="Active and Expanded">Active and Expanded</a>
+                                <ul class="sub">
+                                    <li><a href="#1">Sub navigation Items</a></li>
+                                    <li><a href="#1">Short Sub Items</a></li>
+                                    <li><a href="#1">Item Little Longer</a></li>
+                                    <li><a href="#1">Sub Nav Item Much Longer</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#1" title="Left Nav Continues">Left Nav Continues</a>
+                            </li>
+                            <li>
+                                <a href="#1" title="Last Nav Item">Last Nav Item</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-right">
+
+                        <h1>Wedding & Special Events</h1>
+
+                        <div class="bridal-callout">
+                            <h2>Bridal Spectacular Show</h2>
+                            <p>Nunc lacinia tincidunt erat eget faucibus. Integer tortor lorem, aliquam non mattiset.</p>
+                            <img src="images/line_divider.png">
+                            <a href="#1">Learn More &raquo;</a>
+                        </div>
+
+                        <div class="text">
+
+                            <p>Nunc lacinia tincidunt erat eget faucibus. Integer tortor lorem, aliquam non mattis et, blandit id purus. Donec molestie accumsan leo, ut feugiat libero fermentum vel. Curabitur vestibulum augue vitae nisi molestie lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href="#1">Donec sed sem orci</a>. Praesent imperdiet blandit eros, eu pellentesque sem accumsan ut. Aliquam facilisis purus a risus varius quis lacinia turpis gravida.</p>
+
+                            <div class="wrap-gallery">       
+                                <div class="cycle-slideshow gallery"  
+                                    data-cycle-speed="400" 
+                                    data-cycle-pause-on-hover="true"
+                                    data-cycle-prev=".cycle-prev"
+                                    data-cycle-next=".cycle-next"
+                                    data-cycle-timeout=0
+                                    >
+                                    <img src="http://placehold.it/578x350">
+                                    <img src="http://placehold.it/578x350">
+                                </div>
+                                <img class="mask-gallery" src="images/mask_gallery.png">                                
+                                <a href="#" class="cycle-prev">Prev</a>
+                                <a href="#" class="cycle-next">Next</a>
+                            </div>
+
+                            <h2>Sub Title</h2>
+
+                            <p>Proin eget lacinia lectus. Aliquam erat volutpat. Nulla ornare risus at orci rhoncus vel scelerisque tortor venenatis. Vestibulum quis ante non purus euismod pulvinar a sit amet urna. Vestibulum mattis nulla tellus. Aliquam condimentum eleifend ipsum, a ornare purus ullamcorper sit amet. Nulla tristique massa quis erat adipiscing porttitor. Quisque congue porta erat non fermentum. In hac habitasse platea dictumst. Etiam eget erat a felis vestibulum facilisis vitae non nibh. Donec augue libero, blandit sit amet condimentum malesuada, dictum sagittis risus.</p>
+
+                            <div class="wrap-wed-video">
+                                <iframe width="578" height="350" src="//www.youtube.com/embed/Ftljjuwks1o" frameborder="0" allowfullscreen></iframe>
+                            </div>
+
+                            <p>Vivamus volutpat lectus ac nulla accumsan quis molestie lacus porttitor. Suspendisse ac lacus eu neque volutpat rutrum eget sed nibh. Proin condimentum suscipit justo luctus elementum. Sed a metus non orci cursus porta et malesuada enim.</p>
+                            
+                            <p><strong>Nulla dolor tellus, ornare id convallis ac, ornare a quam. Fusce diam nunc, ultrices ac porttitor sed, vehicula vitae sem. Fusce euismod, velit at tincidunt faucibus diam dolor. </strong></p>
+
+                            <blockquote>“This is an example of a testimonial or any blockquote text. Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio”</blockquote>
+                        </div>
+                        <div class="line-divider"><img src="images/line_divider.png"></div>
+                        <div class="tour-request">
+                            <h1>Request a Tour</h1>
+                            <form id="tour-request" method="post" name="tourRequest" action="">
+                                <input type="text" value="" name="firstName" id="first-name" class="first-name" placeholder="First Name">
+                                <input type="text" value="" name="lastName" id="last-name" class="last-name" placeholder="Last Name">
+                                <input type="text" value="" name="email" id="email" class="email" placeholder="Email">
+                                <input type="submit" value="Send &raquo;" name="formsend" id="form-send" class="form-send">
+                            </form>
+                        </div>
+                        <div class="line-divider"><img src="images/line_divider.png"></div>
+                        <div class="wrap-wed-buttons">
+                            <h2>Preferred Professionals</h2>
+                            <p>Nunc lacinia tincidunt erat eget faucibus. Integer tortor lorem, aliquam non mattiset.</p>
+                            <ul>
+                                <li><a href="#">Buttons 1</a></li>
+                                <li><a href="#">Buttons 2</a></li>
+                            </ul>   
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrap-club-info">
+                    <div class="club-info address">
+                        <h2>Find Us Here</h2>
+                        <p>
+                            <i class="fa fa-map-marker stack fa-2x"></i>
+                            Eagle Oaks<br>
+                            20 Shore Oaks Drive<br>
+                            Farmingdale, NJ 07727<br>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone stack fa-2x"></i>
+                            Phone: (732)938-9696
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope stack fa-lg"></i> 
+                            Email: <a href="mailto:info@eagleoaks.com">info@eagleoaks.com</a>
+                        </p>
+                    </div>
+                    <div class="club-info social">
+                        <img src="images/logo_footer.png" alt="">
+                        <div>
+                        <a href="#"> <i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-twitter-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-google-plus-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-instagram fa-2x"></i></a>
+                    </div> 
+                    </div>
+                    <div class="club-info find-out">
+                        <h2>Find Out More</h2>
+                        <form id="request-info" method="post" name="memberLogin" action="">
+                            <input type="text" value="" name="name" id="your-name" class="your-name" placeholder="Your Name">
+                            <input type="text" value="" name="email" id="your-email" class="your-email" placeholder="Your Email">
+                            <input type="text" value="" name="phone" id="your-phone" class="your-phone" placeholder="Your Phone (optional)">
+                            <input type="submit" value="Send &raquo;" name="formsend" id="form-send" class="form-send">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="wrap-nav-footer">
+                    <ul class="nav-footer">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="#1" title="Membership">Membership</a></li>
+                        <li><a href="#1" title="Wedding & Events">Wedding &amp; Events</a></li>
+                        <li><a href="#1" title="Amenites">Amenites</a></li>
+                        <li><a href="#1" title="About Us">About Us</a></li>
+                        <li><a href="#1" class="bt-member-login">Member Login</a></li>
+                    </ul>
+                </div>    
+                    <p class="copyright">
+                        Copyright &copy; [CURRENT_DATE_YEAR] by <TOKEN:CLUB_NAME> All Rights Reserved. <br>
+                        Club Websites by <a href="http://www.membersfirst.com" target="_blank">MembersFirst, Inc</a> - <a href="http://www.membersfirst.com/usage.htm" target="_blank">Terms of Use</a> - <a href="http://www.membersfirst.com/privacy.htm" target="_blank">Privacy</a>
+                    </p>
+                </div>                
+            </div> 
+        </div>
+</body>
+</html>

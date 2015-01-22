@@ -1,0 +1,802 @@
+
+html, body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+a img{border: none;}
+
+fieldset {
+    padding: 20px;
+}
+
+hr {
+    margin: 20px 0px;
+}
+
+/******MEMBER LOGIN******/
+/*Login Page*/
+html.club_scripts_login_login div.left{
+	width: 340px;
+	float: left;
+}
+html.club_scripts_login_login form div.login-box{
+	border: 1px solid #595959; 
+	padding:0px 10px; 
+	float:right;
+	width:300px;
+}
+html.club_scripts_login_login form div.login-box p span{font-weight:bold;}
+html.club_scripts_login_login form div.login-box p.error, 
+html.club_scripts_login_login form div.login-box p a.bodylink{
+	color:red;
+	font-weight: bold;
+}
+/*Member Password Reminder*/
+html.club_scripts_login_login_email .horizontal{width: 100%;}
+html.club_scripts_login_login_email .horizontal .input{
+	float: left;
+	width: 47%;
+}
+html.club_scripts_login_login_email .horizontal .input p{margin: 0px;}
+html.club_scripts_login_login_email .horizontal p span,
+html.club_scripts_login_login_email .horizontal p a{font-weight: bold;}
+html.club_scripts_login_login_email .horizontal input[type=submit]{margin-top:20px;}
+/******REQUEST FORMS******/
+html.club_scripts_contact_contact_info .content-right table[width="600"]{background: none !important;}
+html.club_scripts_contact_contact_info .content-right table[width="600"] tr td[colspan="2"]{background: none !important;}
+
+/******DOCUMENT LIBRARY******/
+/*Library Document List*/
+html.club_scripts_library_view_library_list .list_all_doc_sections ul h1{text-indent: -35px;}
+html.club_scripts_library_view_library_list .list_all_doc_sections ul h2{text-indent: -15px;}
+
+/******FILE LIBRARY******/
+/*File Library List*/
+html.club_scripts_filelib_view_filelib_list .file-library-list tr[valign=top] td{ padding: 2px 0px;}
+html.club_scripts_filelib_view_filelib_list .text.adobe{
+	text-align: center;
+	margin: 45px 0px 0px 0px;
+}
+
+/******CLUB PERSONEL LIST******/
+/*Club Personel List - One Column Card*/
+html.club_scripts_clubpers_view_clubpers_list .content-right h2 {
+	float:left;
+	display: block;
+	width:100%;
+	clear: both;
+	margin:10px 0 20px 0;
+}
+.clubPersonnelWrap {width:100%;}
+.clubPersonnelCard {
+	width:93%;
+	height:auto;
+	padding:10px;
+	border:1px solid #ccc;
+	box-shadow:0 0 5px #ccc;
+	float:left;
+	background: #FFFFFF;
+	margin: 0px 10px 20px 10px;
+}
+.img_wrap {
+    float: left;
+    height: 130px;
+    margin-right:15px;
+    overflow: hidden;
+    width: 107px;
+}
+img.clubPersonnelPic {
+	display: block;
+	width:107px;
+	float:left;
+}
+.clubPersonnelContentWrap {
+	float:left;
+	width:30%;
+	height:130px;
+}
+.clubPersonnelContentWrap h3 {
+	margin-top:5px !important;
+	margin-bottom:5px !important;
+	font-weight: normal !important;
+	font-size:15px !important;
+	line-height: 18px !important;
+	width:160px;
+    float: none !important;
+}
+.clubPersonnelContentWrap h4 {
+	margin-top:0px !important;
+	margin-bottom:10px !important;
+	font-weight: normal !important;
+	font-size:12px !important;
+	line-height: 14px !important;
+	font-style:italic !important;
+	text-transform: uppercase;
+	width: 160px;
+    float: none !important;
+
+}
+.clubPersonnelContentWrap p {
+	margin:0px !important;
+	font-size:12px !important;
+	line-height:18px !important;
+    float: none !important;
+
+}
+.clubPersonnelContentWrap .icons {
+	display: none;
+	margin-top:15px;
+}
+.clubPersonnelContentWrap span.proIcon {
+	padding:3px 5px;
+	background: #99cc99;
+	border-radius: 3px;
+	font-size:11px;
+	text-transform: uppercase;
+	font-family: Arial,sans-serif;
+	color:white;
+}
+.clubPersonnelContentWrap span.instructorIcon {
+	padding:3px 5px;
+	background: #99b3cd;
+	border-radius: 3px;
+	font-size:11px;
+	text-transform: uppercase;
+	font-family: Arial,sans-serif;
+	color:white;
+}
+.clubPersonnelIntroduction {
+	float:left;
+	width:38%;
+	padding-left:7%;
+	margin: 0px 0px 20px 0%;
+	border-left:1px solid #ccc;
+}
+.clubPersonnelIntroduction h3 {
+	font-size:14px !important;
+	line-height: 16px !important;
+	margin-top:0px !important;
+	margin-bottom:5px !important;
+}
+.clubPersonnelIntroduction p {
+	font-size: 12px !important;
+	line-height: 20px !important;
+	margin: 0px !important;
+}
+.clubPersonnelCardShadow {
+	height: 14px;
+	width: 300px;
+	background: url(http://design01.memfirstweb.net/custom/images/club-pers-card-shadow.png);
+	position: absolute;
+	bottom:-14px;
+	right:0px;
+}
+.clubPersonnelCard.twoColumn .clubPersonnelIntroduction {display: none;}
+.clubPersonnelCard.twoColumn .clubPersonnelContentWrap {width:auto;}
+.clubPersonnelCard.twoColumn {
+	width:42.5%;
+	margin-left:10px;
+	margin-right:10px;
+}
+.clubPersonnelCard.simple {
+	width:97%;
+	padding:10px;
+	border:0 none;
+	box-shadow: 0 0 2px #999;
+	background:none;
+    cursor: pointer;
+}
+.clubPersonnelCard.simple:hover{background: url("http://design01.memfirstweb.net/custom/images/club-pers-hover-arrow.png") no-repeat scroll 690px center #fff;}
+.clubPersonnelCard.twoColumn.simple {width:46%;}
+.clubPersonnelCard.simple .clubPersonnelCardShadow {display: none;}
+.clubPersonnelCard.full {height:auto;}
+.clubPersonnelCard.full img.clubPersonnelPic {
+	width:250px;
+	height:304px;
+}
+.clubPersonnelCard.full .clubPersonnelIntroduction {
+	padding-left:0;
+	margin-left:0;
+	border-left:0 none;
+	width:52%;
+	padding-top:20px;
+	margin-top:20px;
+	border-top:1px solid #ccc;
+}
+/*Club Personel List - Basic With Photo*/
+div.pers_listing {
+	margin:30px 0;
+	overflow:hidden;
+}	
+div.pers_info {float:left;}	
+div.pers_img { 
+	float:left; 
+	margin-right:20px; 
+}
+div.pers_img img{border: 1px solid #212121;}
+span.pers_position {margin-left:10px;}
+div.pers_info h3{margin: 0px 0px 15px 0px;}	
+div.pers_info p { 
+	margin:10px 0;
+	display:block;
+}
+/*Club Personel List - Detail*/
+div.image_pers{
+	float: right;
+	padding:0px 0px 10px 10px;
+}
+div.image_pers img{width: 250px;}
+div.personnel_detail p span.bold{font-weight:bold;}
+/*Club Personel List - Original Table*/
+table.club_staff_title_bar{
+	background-color:rgba(0,0,0,0);
+	border-bottom: 2px solid #000;
+}
+table.club_staff_title_bar h3{margin:5px 0px 0px;}
+.personnel_list table.staff_list{
+	border-bottom: 1px solid #cecece;
+	margin: 7px 0px 2px 0px;
+	padding: 0px 0px 5px 0px;
+}
+
+/*User Org List*/
+html.club_scripts_member_member_search_orgs .member-search-orgs h1{float: none;}
+html.club_scripts_member_member_search_orgs .member-search-orgs h2{margin: 15px 0px 5px;}
+html.club_scripts_member_member_search_orgs .member-search-orgs h2 a{font-size:12px;}
+html.club_scripts_member_member_search_orgs .member-search-orgs h3{margin: 0px 0px 5px;}
+html.club_scripts_member_member_search_orgs .member-search-orgs tr.line td{padding: 0px;}
+html.club_scripts_member_member_search_orgs .member-search-orgs tr.line2 td{padding: 0px;}
+
+
+/***********  IMAGE ALBUMS  ***********/
+/*full list view*/
+html.club_scripts_imagealbum_view_albums_list .album-group {
+    position:relative; 
+    float:left; 
+    width:100%; 
+    clear:both;
+}
+html.club_scripts_imagealbum_view_albums_list .album-single {
+    width:222px; 
+    height:194px; 
+    background:url(http://design01.memfirstweb.net/custom/imagealbumlistview/frame.png) no-repeat; 
+    float:left; 
+    position:relative; 
+    padding-bottom:90px; 
+    margin-right:10px;
+}
+html.club_scripts_imagealbum_view_albums_list .album-count {
+    width:30px; 
+    position:absolute; 
+    right:7px; 
+    top:30px; 
+    text-align:center; 
+    font-size:14px; 
+    line-height:1 !important;
+}
+html.club_scripts_imagealbum_view_albums_list .album-cover {
+    position:absolute; 
+    top:17px; 
+    left:17px; 
+    width:160px; 
+    height:160px; 
+    overflow:hidden;
+}
+html.club_scripts_imagealbum_view_albums_list .album-cover a {
+    outline:0; 
+    border:0;
+}
+html.club_scripts_imagealbum_view_albums_list .album-title {
+    position:absolute; 
+    top:200px; 
+    width:200px; 
+    left:0px; 
+    text-align:center;
+}
+html.club_scripts_imagealbum_view_albums_list .album-title a {
+    background:url("http://design01.memfirstweb.net/custom/imagealbumlistview/white70.png"); 
+    border-radius: 30px 30px 30px 30px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    padding: 5px 10px; 
+    display:block; 
+    font-size:14px !important; 
+    line-height:18px !important;
+}
+html.club_scripts_imagealbum_view_albums_list .album-desc {
+    position:absolute; 
+    top:17px; 
+    left:17px; 
+    width:140px; 
+    height:140px; 
+    padding:10px; 
+    background:url(http://design01.memfirstweb.net/custom/imagealbumlistview/white70.png); 
+    font-size:14px; 
+    display:none; 
+    cursor:pointer;
+}
+html.club_scripts_imagealbum_view_albums_list .album-i {
+    position:absolute; 
+    top:152px; 
+    left:22px; 
+    width:20px; 
+    height:20px; 
+    z-index:99; 
+    background:url(http://design01.memfirstweb.net/custom/imagealbumlistview/i.png);
+}
+html.club_scripts_imagealbum_view_albums_list h2{
+    float: left;
+    width: 100%;
+}
+
+/*detail view*/
+html.club_scripts_imagealbum_view_albums .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+html.club_scripts_imagealbum_view_albums .clearfix {display: inline-block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+html.club_scripts_imagealbum_view_albums .iat-gallery {text-align: center;}
+html.club_scripts_imagealbum_view_albums .iat-gallery a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    outline: 0;
+    margin: 7px;
+}
+html.club_scripts_imagealbum_view_albums .iat-gallery .img-wrap {
+    position: relative;
+    float: left;
+}
+html.club_scripts_imagealbum_view_albums .iat-gallery img.magnifier {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index:9;
+}
+html.club_scripts_imagealbum_view_albums .iat-gallery a img {
+    display: block;
+    border: 0 none;
+    outline: 0;
+}
+html.club_scripts_imagealbum_view_albums .img-wrap .fa-search-plus {
+    bottom: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: absolute;
+    right: 23px;
+    text-shadow: 0 0 5px #666666;
+    z-index: 900;
+}
+
+
+
+/*********** ANNOUNCEMENTS ***********/
+.private-announcements {
+    display: table;
+    float: left;
+    margin: 20px 0px 30px;
+    width: 100%;
+}
+.private-announcements .wrap-announcements{
+    width: 96%;
+    padding: 2%;
+    float: left;
+}
+.private-announcements div.title {
+    display: table-cell;
+    float: left;    
+    width: 37%;
+    vertical-align: middle;
+    text-align: center;
+}
+.private-announcements ul.announcements {
+    display: table-cell;
+    float: left;
+    list-style: none outside none;
+    margin: 0 0 0 18px;
+    padding: 22px 0;
+    vertical-align: middle;
+    width: 59%;
+}
+.private-announcements ul.announcements li {
+    float: right;
+    width: 100%;
+}
+
+/**********  FEATURED HIGHLIGHT  ***********/
+.private_highlight{
+    float: left;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+}
+.private_highlight a.img-first-highlight{
+    float: left;
+    width: ;
+    margin: 0px 15px 15px 0px;
+}
+.private_highlight .highlight_text h2{ margin-top: 0px;}
+
+
+/**********  PRIVATE LEFT  ***********/
+.private_left {
+    float: left;
+    width: 63%;
+}
+/*HIGHLIGHTS*/
+.content-right ul.highlights {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+.content-right ul.highlights li {
+    clear: both;
+    display: block;
+    width: 100%;
+    float: left;
+}
+.content-right ul.highlights h3 {
+    padding: 0;
+    margin-bottom: 5px;
+}
+.content-right ul.highlights span.img_highlight {
+    display: block;
+    float: left;
+    margin-right: 12px;
+    width: 129px;
+}
+.content-right span.img_highlight img{
+    float: left;
+    width: 100%;
+    display: block;
+}
+.content-right ul.highlights li div {
+    float: left;
+    width: 62%;
+}
+.content-right ul.highlights li div p{
+	margin: 0px 0px 10px 0px;
+}
+.content-right ul.highlights li div.wide {width: 98%;}
+
+/***********  PRIVATE RIGHT  ***********/
+.private_right {
+    float: right;
+    width: 33%;
+}
+
+/*BUTTONS*/
+.content-right .btn_links {
+    float: left;
+    margin-bottom:25px;
+    width: 100%;
+}
+.content-right .btn_links .btn-item a {
+    display: block;
+    float: left;
+    margin-bottom: 8px;
+    width: 81%;
+}
+
+
+/*CALENDAR*/
+.content-right div.events {
+    float: left;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.content-right div.events h2 {
+    float: left;
+    width: 100%;
+}
+.content-right ul.side_calendar_list {
+    float: left;
+    margin:0px;
+    width: 100%;
+    padding: 0px;
+}
+.content-right ul.side_calendar_list li {
+    float: left;
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding-left: 0;
+    width: 100%;
+}
+.content-right ul.side_calendar_list .event_date {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.content-right ul.side_calendar_list h3 {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.content-right ul.side_calendar_list h3 span {
+    float: left;
+    width: 100%;
+}
+.content-right ul.side_calendar_list .wrap-event{
+    float: right;
+    padding-top: 10px;
+}
+.content-right ul.side_calendar_list .day_desc {
+    float: right;
+    overflow: hidden;
+    width: 90%;
+}
+.content-right ul.side_calendar_list li a.desc {
+    display: block;
+    margin: 0px 0px 10px;
+    padding: 0 15px 0 0;
+    text-align: left;
+}
+/*paginator*/
+.paginator_wrapper {
+    float: left;
+    margin-top: 10px;
+    width: 90%;
+    position: relative;
+}
+.paginator {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.paginator a.inactive {opacity: 1;}
+.paginator a {
+    display: inline-block;
+    opacity: 1;
+    margin: 0 1px;
+}
+.paginator a.prev {
+    display: block;
+    float: left;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    border: 0px;
+}
+.paginator a.next {
+    display: block;
+    float: right;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    border: 0px;
+}
+.paginator a.prev.inactive, .paginator a.next.inactive{opacity: 1;}
+
+/*SIDE INSERT*/
+.content-right div.specialinserts {
+    float: left;
+    width: 99%;
+    margin-bottom:25px;
+}
+.content-right div.specialinserts div.insert {
+    float: left;
+    margin: 11px 0px 20px 15px;
+    width: 85%;
+}
+.content-right div.specialinserts div.text p{
+	margin: 0px 0px 13px 0px;
+    width: 100%;
+    padding: 0px;
+}
+
+/*MY PROFILE*/
+
+/*CALENDAR*/
+table.cal_printlink {width:100%;}
+table.cal_nav {
+    width:100%;
+    background:none;
+    border:none;
+    padding:3px;
+}
+table.cal_nav table,
+table.cal_nav tr,
+table.cal_nav td {
+    background:none;
+    border:none;
+}
+table.cal_main {
+    border:none;
+    background:none;
+    border-collapse:separate;
+    border-spacing:3px 1px;
+    width:100%;
+    margin-bottom:15px;
+}
+table.cal_main tr,
+table.cal_main td {border:none;}
+table.cal_main tr.day_title  {
+    font-weight:bold;
+    padding:2px;
+    font-size:10px;
+}
+table.cal_main tr.day_title td {padding:3px 0;}
+table.cal_main tr.day_box td {padding:10px 4px;}
+table.cal_main tr.day_box td a {font-size:12px;}
+table.cal_main tr.day_title td a {
+    font-weight:bold;
+    font-size:11px;
+}
+table.cal_main .day_box img {
+    border-bottom:1px dotted #424840;
+    height:0;
+    margin:5px 0;
+}
+table.cal_main .day_box a img {
+    border:none;
+    height:auto;
+    margin:auto;
+}
+table.cal_add_form {
+    background:none !important;
+    color:#000 !important;
+    border:none !important;
+}
+table.cal_add_form input,
+table.cal_add_form textarea,
+table.cal_add_form select {
+    background:#F2F2F2;
+    border:1px solid #CFC5B5;
+    color:#000;
+    padding:3px 4px;
+    margin:3px 0px;
+}
+table.cal_add_title {margin: 20px 0px 10px 0px;}
+table.cal_add_title, 
+table.cal_add_title tr,
+table.cal_add_title td {
+    border:none !important;
+    color:#000  !important;
+    background:none !important;
+    text-align:left !important;
+    font-size:16px !important;
+}
+
+/**** SURVEYS ****/
+html.club_scripts_survey_survey_list .content-right table tr.title{background: none !important;}
+html.club_scripts_survey_survey_list .content-right table h2{margin-bottom: 5px;}
+
+
+/**** GENERAL ****/
+.main .back_button{display: none;}
+
+/** Business Directory **/
+.businessCard {
+    width: 96%;
+    float: left;
+    padding: 2%;
+    margin: 0px 0 40px;
+    border:0 none;
+    box-shadow: 0px 0px 2px #999;
+    background: url("http://design01.memfirstweb.net/custom/images/business_card_bg.png") right center no-repeat #fff;
+}
+.businessCard.featured img.featured{
+position: absolute;
+top: -3px;
+right: -3px;
+}
+.businessCard .busListPic {
+    width: 175px;
+    float: left;
+    display: block;
+    margin-right: 25px;
+}
+.businessCard .busListContentWrap {
+    width: 27%;
+    float: left;
+    border-right: 1px solid #ccc;
+    margin: 0px 4% 0px 0;
+    padding-right: 4%;
+}
+.businessCard h3 {
+    margin-top:0px !important;
+    margin-bottom:10px !important;
+    font-weight: normal !important;
+    font-size:15px !important;
+    line-height: 18px !important;
+}
+.businessCard .busListContentWrap h4 {
+    margin-top:0px !important;
+    margin-bottom:10px !important;
+    font-weight: normal !important;
+    font-size:12px !important;
+    line-height: 14px !important;
+    font-style:italic !important;
+    text-transform: uppercase;
+    width: 160px;
+    float: none !important;
+}
+.businessCard .busListContentWrap p {
+    margin:0px !important;
+    font-size:12px !important;
+    line-height:18px !important;
+    float: none !important;
+}
+
+.businessCard .busListIntroduction {
+    width: 27%;
+    float: left;
+    
+}
+.businessCard .busListIntroduction h3 {
+    font-size:14px !important;
+    line-height: 16px !important;
+    margin-top:0px !important;
+    margin-bottom:5px !important;
+}
+.businessCard .busListIntroduction p {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    margin: 0px !important;
+}
+.businessForm {
+    width: 100%;
+    float: left;
+    margin: 0 0 20px 0px;
+}
+.businessForm h3 {
+    margin-top: 0px !important;
+}
+.businessForm form {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+.business_form_row {
+    width: 40%;
+    float: left;
+    margin-bottom: 5px;
+}
+.business_form_row.business_form_row_small {
+    width: 20%;
+}
+.business_form_row label {
+    width: 100%;
+    float: left;
+    margin-bottom: 3px;
+}
+.business_form_row input[type="text"], .business_form_row select {
+    width: 80%;
+    float: left;
+}
+.business_form_row input {
+    padding: 2px 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.business_form_row select {
+    width: 90%;
+    padding: 4px 0px;
+}
+.business_form_row input[type="submit"] {
+    padding: 4px 13px;
+    border: 0px;
+    float: left;
+    color: #fff;
+    background: #547034;
+}

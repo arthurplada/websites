@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="imagetoolbar" content="no" >
+    <meta name="classification" content="Internet" >
+    <meta name="resource-type" content="document" >
+    <meta name="distribution" content="Global" >
+    <meta name="doc-class" content="Completed" >
+    <meta name="doc-rights" content="Public" >
+    <meta name="doc-rights" content="Public" >
+    <meta name="rating" content="General" >
+    <meta name="description" content="" >
+    <meta name="language" content="en" >
+    <meta name="robots" content="ALL" >
+    <meta name="keywords" content="" >
+    
+    <!-- Required JS -->
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="js/jquery.html5-placeholder-shim.js"></script>
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/simpleweather.js"></script>
+    <script type="text/javascript" src="js/private_side.js"></script>
+    <script type="text/javascript" src="js/paginator.js"></script>
+    <script type="text/javascript" src="js/store.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Required CSS -->
+    <link rel="stylesheet" type="text/css" href="/custom/js/fancybox/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <!-- Custom CSS -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,300|Caudex:400,700,400italic' >
+    <link rel="stylesheet" type='text/css' href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+</head>
+<body>
+    <!--[if lt IE 7 ]> <div class="ie6"> <![endif]-->
+    <!--[if IE 7 ]>    <div class="ie7"> <![endif]-->
+    <!--[if IE 8 ]>    <div class="ie8"> <![endif]-->
+    <!--[if IE 9 ]>    <div class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--> <div class="notie"> <!--<![endif]-->
+        <div id="website" class="homepage">  
+
+            <div class="closeLogin" style="display: none;"></div>
+            
+            <div class="memberLogin" style="display: none;">
+                <div class="wrap-login">
+                    <div class="arrow"></div>
+                    <h2>MEMBER LOGIN</h2>
+                    <div class="double-lines"></div>
+                    <div class="closeButton"></div>
+                    <form class="login" method="post" name="memberLogin" action="/club/scripts/login/login_validate.asp" id="memberLogin">
+                        <input type="text" value="" name="user" id="login-username" class="username" placeholder="Username">
+                        <input type="password" value="" name="pw" id="login-password" class="password" placeholder="Password">
+                        <input type="checkbox" value="Remember me" id="login-remember" name="save_login" class="remember">
+                        <label class="remember" for="login-remember">Keep me logged in</label>
+                        <input type="submit" value="Login" name="MemEnter" id="login-submit" class="submit">
+                        <p class="help">
+                            <a href="/club/scripts/login/login.asp">
+                                <img src="images/login-help.png">&nbsp;&nbsp;Help?
+                            </a>
+                        </p>
+                    </form>
+                    <div class="membership">
+                        <a href="#1">
+                            Learn More About Membership<br> 
+                            <span>Learn More Today &raquo;</span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="header">    
+                <div class="wrap-header">      
+                    <a href="#1" class="logo" title="">
+                        <img src="images/logo.png" alt="Logo"/>
+                    </a>   
+                    <ul class="navigation left">
+                        <li><a href="#1" title="Wedding & Events">Wedding &amp; Events</a></li>
+                        <li class="active"><a href="#1" title="Membership">Membership</a></li>
+                    </ul> 
+                    <ul class="navigation right">
+                        <li><a href="#1" title="Amenities">Amenities</a></li>
+                        <li><a href="#1" title="About Us">About Us</a></li>
+                        <li><a href="#1" class="bt-member-login" title="Member Login">Login <i class="fa fa-sign-in fa-lg"></i></a></li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="wrap-slideshow">
+                <div class="cycle-slideshow slideshow" id="hp-slideshow"  
+                    data-cycle-pager=".nav-slider" 
+                    data-cycle-speed="3000" 
+                    data-cycle-slides="> div"
+                    data-cycle-pause-on-hover="true"
+                    >
+                    <div class="slide" style="background: url(images/img_slideshow_01.jpg) no-repeat center top;">
+                        <div class="slide_descriptions">
+                            <h1><span>Truely in a</span>
+                            League of our Own</h1>
+                            <a href="/club/scripts/section/section.asp?NS=PWN">
+                                Duis nec ullamcorper mauris. Duis sodales lectus at lacus venenatis dictum. Phasellus tellus lectus elementum.
+                                <img src="images/arrow_more.png" alt="">
+                            </a>    
+                        </div>
+                    </div>
+                    <div class="slide" style="background: url(images/img_slideshow_02.jpg) no-repeat center top;">
+                        <div class="slide_descriptions">
+                            <h1><span>Truely in a</span>
+                            League of our Own</h1>
+                            <a href="/club/scripts/section/section.asp?NS=PWN">
+                                Duis nec ullamcorper mauris. Duis sodales lectus at lacus venenatis dictum. Phasellus tellus lectus elementum.
+                                <img src="images/arrow_more.png" alt="">
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-for-more"><span>scroll</span><br><img src="images/arrow_scroll.png" alt=""></div>
+                <div class="nav-slider"></div>
+            </div>
+            
+            <div class="main" id="hp-main">
+                <div class="hp-welcome">
+                    <h1>Nested in the small town of Farmingdale in Monmouth County,</h1>
+                    <div class="wrap-welcome">
+                        <p class="welcome-text">
+                            Eagle Oaks is everything a private golf and country club should be…a Championship caliber golf course designed by Jack Nicklaus and Johnny Miller, a stunning Southern Colonial-inspired clubhouse, and lush landscaping on 350 acres near the Shore in Monmouth County, New Jersey.<br><br>
+                            Eagle Oaks, a family-friendly club, is an ideal place for family and friends to gather and enjoy all of life’s delights. Whether a quiet dinner for two, family outdoor movie night, an afternoon round of golf with the children, or an elegant wedding or corporate function, the Club’s amenities are sure to please you.
+                        </p> 
+                        <a class="link-brochure" href="">Explore Our Digital Brochure &raquo;</a>                   
+                    </div>
+                    <img class="circle-sml" src="images/img_circle_sml.png" alt="">
+                    <img class="circle-lg" src="images/img_circle_lg.png" alt="">
+                </div>
+                <div class="callout-slider">
+                    <h1><span class="animate-span">Ideal place</span>For Family</h1>
+                    <img src="images/line_divider.png" alt="">
+                    <ul class="callout-pager"></ul>
+                    <div class="cycle-slideshow" id="callout-slideshow" 
+                        data-cycle-speed="1000" 
+                        data-cycle-slides="> div" 
+                        data-cycle-fx=scrollHorz
+                        data-cycle-pager=".callout-pager"
+                        data-cycle-prev=".callout-prev"
+                        data-cycle-next=".callout-next"
+                        data-cycle-timeout=0
+                        >
+                        <div class="slide" data-cycle-pager-template="<li><a href='#'>Explore<span>The Course</span></a></li>">
+                            <div class="callout-description">
+                               <a href="">
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                               </a>
+                            </div>
+                            <img src="images/img_callout_01.jpg" alt="">                            
+                        </div>
+                        <div class="slide" data-cycle-pager-template="<li><a href='#'>Discover<span>Our Family</span></a></li>">
+                            <div class="callout-description">
+                                <a href="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                </a>
+                            </div>
+                            <img src="images/img_callout_02.jpg" alt="">                            
+                        </div>
+                        <div class="slide" data-cycle-pager-template="<li><a href='#'>Explore<span>The Course</span></a></li>">
+                            <div class="callout-description">
+                               <a href="">
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                               </a>
+                            </div>
+                            <img src="images/img_callout_01.jpg" alt="">                            
+                        </div>
+                        <div class="slide" data-cycle-pager-template="<li><a href='#'>Discover<span>Our Family</span></a></li>">
+                            <div class="callout-description">
+                                <a href="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                </a>
+                            </div>
+                            <img src="images/img_callout_02.jpg" alt="">                            
+                        </div>
+                    </div>                    
+                    <div class="callout-prev"><img src="images/arrow_prev.png"></div>
+                    <div class="callout-next"><img src="images/arrow_next.png"></div>
+                </div>
+
+                <div class="hp-wedding">
+                    <div class="wrap-hp-wedding">
+                        <h1><span class="animate-wed-span">Simply Perfect for any</span> Special Event</h1>
+                        <img src="images/line_divider.png">
+                        <p class="wedding-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </p> 
+                        <a class="link-wedding" href="#">Start Planning &raquo;</a>                   
+                    </div>
+                    <div class="wrap-heart">
+                        <img class="heart-left" src="images/img_heart_left.png" alt="">
+                        <img class="heart-right" src="images/img_heart_right.png" alt="">
+                    </div>    
+                </div>
+
+                <div class="wrap-video">
+                    <div class="wrap-play">
+                        <span id="playvid" href="">
+                            <img src="images/ico_play.png">
+                            Watch Video
+                        </span>
+                    </div>
+                    <video id="bgvid" class="bg-vid" poster="/custom/images/img_video.jpg" >
+                        <source type="video/webm" src="http://www.eagleoaks.com/custom/video/hp_intro_video.webm"></source>
+                        <source type="video/mp4" src="http://www.eagleoaks.com/custom/video/hp_intro_video.mp4"></source>
+                    </video>
+                    <div class="wrap-bg-full-vid">
+                        <div id='video-overlay'></div>
+                        <video id="bgfullvid"  class="bg-full-vid" poster="/custom/images/img_video.jpg" preload="auto">
+                            <source type="video/webm" src="http://www.eagleoaks.com/custom/video/hp_full_video.webm"></source>
+                            <source type="video/mp4" src="http://www.eagleoaks.com/custom/video/hp_full_video.mp4"></source>
+                        </video>
+                        
+                    </div>    
+                    
+                    <div class="video-description">
+                        <h1><span class="animate-vid-span">One of a kind</span> Luxurious Retreat</h1>
+                        <img src="images/line_divider.png">
+                        <p class="video-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </p> 
+                        <a class="link-video" href="">Check Out Video Tour &raquo;</a>
+                    </div>
+                </div> 
+
+            </div>               
+            
+            <div class="footer">
+                <div class="wrap-club-info">
+                    <div class="club-info address">
+                        <h2>Find Us Here</h2>
+                        <p>
+                            <i class="fa fa-map-marker stack fa-2x"></i>
+                            Eagle Oaks<br>
+                            20 Shore Oaks Drive<br>
+                            Farmingdale, NJ 07727<br>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone stack fa-2x"></i>
+                            Phone: (732)938-9696
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope stack fa-lg"></i> 
+                            Email: <a href="mailto:info@eagleoaks.com">info@eagleoaks.com</a>
+                        </p>
+                    </div>
+                    <div class="club-info social">
+                        <img src="images/logo_footer.png" alt="">
+                        <div>
+                        <a href="#"> <i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-twitter-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-google-plus-square fa-2x"></i></a>
+                        <a href=""> <i class="fa fa-instagram fa-2x"></i></a>
+                    </div> 
+                    </div>
+                    <div class="club-info find-out">
+                        <h2>Find Out More</h2>
+                        <form id="request-info" method="post" name="memberLogin" action="">
+                            <input type="text" value="" name="name" id="your-name" class="your-name" placeholder="Your Name">
+                            <input type="text" value="" name="email" id="your-email" class="your-email" placeholder="Your Email">
+                            <input type="text" value="" name="phone" id="your-phone" class="your-phone" placeholder="Your Phone (optional)">
+                            <input type="submit" value="Send &raquo;" name="formsend" id="form-send" class="form-send">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="wrap-nav-footer">
+                    <ul class="nav-footer">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="#1" title="Membership">Membership</a></li>
+                        <li><a href="#1" title="Wedding & Events">Wedding &amp; Events</a></li>
+                        <li><a href="#1" title="Amenites">Amenites</a></li>
+                        <li><a href="#1" title="About Us">About Us</a></li>
+                        <li><a href="#1" class="bt-member-login">Member Login</a></li>
+                    </ul>
+                </div>    
+                    <p class="copyright">
+                        Copyright &copy; [CURRENT_DATE_YEAR] by <TOKEN:CLUB_NAME> All Rights Reserved. <br>
+                        Club Websites by <a href="http://www.membersfirst.com" target="_blank">MembersFirst, Inc</a> - <a href="http://www.membersfirst.com/usage.htm" target="_blank">Terms of Use</a> - <a href="http://www.membersfirst.com/privacy.htm" target="_blank">Privacy</a>
+                    </p>
+                </div>                
+            </div> 
+        </div>
+
+</body>
+</html>

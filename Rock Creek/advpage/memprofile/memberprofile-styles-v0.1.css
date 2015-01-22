@@ -1,0 +1,437 @@
+.clear {
+	clear:both;
+}
+.memberprofile-wrap {
+	line-height:1.5em;
+	position:relative;
+}
+.memberprofile-details {
+	height:150px;
+	width:100%;
+	margin-bottom:15px;
+}
+.memberprofile-user-pic {
+	width:141px;
+	height:141px;
+	position:relative;
+	float:left;
+	margin-right:20px;
+}
+
+.memberprofile-user-pic-mask {
+	position:absolute;
+	z-index:10px;
+	top:-4px;
+	left:-4px;
+	width:149px;
+	height:149px;
+	background:url(/custom/advpage/memprofile/images/memberprofile-thumbnail-mask.png) no-repeat 0 0;
+}
+
+.memberprofile-user-pic-mask a {
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.memberprofile-user-details-right {
+	float:left;
+	width:500px;
+	height:100px;
+	padding-bottom:14px;
+}
+
+h1.memberprofile-user-name {
+	clear:none;
+	float:none;
+	width:auto;
+	background:none;
+	border:none;
+	letter-spacing:0;
+	margin:0px;
+	padding:0px;
+	font-size:20px;
+	line-height: 1.4em;
+	margin-bottom:15px;
+}
+
+.memberprofile-user-icon-text-left {
+	width:45%;
+	margin-right:10%;
+	float:left;
+}
+.memberprofile-user-icon-text-right {
+	width:45%;
+	float:left;
+	margin-top: 10px;
+}
+
+
+.memberprofile-user-location,
+.memberprofile-user-email {
+	display:block;
+	margin:0 20px 10px 0px;
+	padding: 0 0 0 28px;
+	height:18px;
+	font-size:12px;
+	line-height:18px;
+	color:#868686;
+	width:100%;
+}
+
+.memberprofile-user-location {
+	background:url(/custom/advpage/memprofile/images/memberprofile-icon-marker.png) no-repeat left center;
+	
+}
+.memberprofile-user-email {
+	background:url(/custom/advpage/memprofile/images/memberprofile-icon-email.png) no-repeat left center;
+}
+.memberprofile-user-facebook a {
+	/*background:url(/custom/advpage/memprofile/images/memberprofile-icon-facebook.png) no-repeat left center;*/
+	
+	width: 28px;
+	height: 29px;
+	float: left;
+	background:url(/custom/advpage/memprofile/images/facebook-sprite.png) no-repeat top;
+	text-indent: -9999px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	margin-right: 12px;
+}
+.memberprofile-user-facebook a:hover {
+    background-position: bottom;
+}
+.memberprofile-user-twitter a {
+	/*background:url(/custom/advpage/memprofile/images/memberprofile-icon-twitter.png) no-repeat left center;*/
+	
+	width: 28px;
+	height: 29px;
+	float: left;
+	background:url(/custom/advpage/memprofile/images/twitter-sprite.png) no-repeat top;
+	text-indent: -9999px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	margin-right: 12px;
+}
+.memberprofile-user-twitter a:hover {
+    background-position: bottom;
+}
+.memberprofile-user-linkedin a {
+	/*background:url(/custom/advpage/memprofile/images/memberprofile-icon-linkedin.png) no-repeat left center;*/
+	
+	width: 28px;
+	height: 29px;
+	float: left;
+	background:url(/custom/advpage/memprofile/images/linkedin-sprite.png) no-repeat top;
+	text-indent: -9999px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	margin-right: 12px;
+}
+.memberprofile-user-linkedin a:hover {
+    background-position: bottom;
+}
+
+
+
+a.memberprofile-btn-addfriend {
+	border:none;
+	background:#17415B url(/custom/advpage/memprofile/images/memprofile-addcontact-btn.png) no-repeat left top;
+	width:146px;
+	height:29px;
+	text-indent:-9999px;
+	outline:0;
+	display:block;
+	float:left;
+	margin: 0 8px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+}
+
+a.memberprofile-btn-addfriend:hover,
+a.memberprofile-btn-addfriend:active {
+	background-position:left bottom;
+}
+
+
+a.memberprofile-btn-edit {
+	border:none;
+	background:#17415B url(/custom/advpage/memprofile/images/memberprofile-edit-btn.png) no-repeat left top;
+	width:132px;
+	height:29px;
+	text-indent:-9999px;
+	outline:0;
+	display:block;
+	float:left;
+	margin: 0 8px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+}
+
+a.memberprofile-btn-edit:hover,
+a.memberprofile-btn-edit:active {
+	background-position:left bottom;
+}
+
+
+a.memberprofile-btn-edit-cancel {
+	border:none;
+	background:#7F1919 url(/custom/advpage/memprofile/images/memberprofile-edit-btn-cancel.png) no-repeat left top;
+	width:132px;
+	height:29px;
+	text-indent:-9999px;
+	outline:0;
+	display:block;
+	float:left;
+	margin: 0 8px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+}
+
+a.memberprofile-btn-edit-cancel:hover,
+a.memberprofile-btn-edit-cancel:active {
+	background-position:left bottom;
+}
+
+a.memberprofile-btn-ghin-scores {
+	border:none;
+	background:#4B7A42 url(/custom/advpage/memprofile/images/memberprofile-ghin-scores-btn.png) no-repeat left top;
+	width:142px;
+	height:29px;
+	text-indent:-9999px;
+	outline:0;
+	display:block;
+	float:left;
+	margin: 0 8px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+}
+
+a.memberprofile-btn-ghin-scores:hover,
+a.memberprofile-btn-ghin-scores:active {
+	background-position:left bottom;
+}
+
+
+/***************************************
+
+HIDE DEFAULT PHOTO UPLOAD
+
+*************************************/
+
+.memprofile-image-update-widget {
+	display:none;
+}
+
+
+a.memberprofile-btn-edit-photo {
+	border:none;
+	background:#17415B url(/custom/advpage/memprofile/images/memprofile-edit-btn-photo.png) no-repeat left top;
+	width:132px;
+	height:29px;
+	text-indent:-9999px;
+	outline:0;
+	display:block;
+	float:left;
+	margin: 0 8px;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+}
+
+a.memberprofile-btn-edit-photo:hover,
+a.memberprofile-btn-edit-photo:active {
+	background-position:left bottom;
+}
+
+
+
+.memberprofile-user-content-wrap {
+	clear:both;
+	margin:15px 0px;
+}
+
+.memberprofile-user-activities-wrap,
+.memberprofile-edit-btns-wrap {
+	background:url(/custom/advpage/memprofile/images/memberprofile-activities-bg.png) no-repeat 0 0;
+	width:662px;
+	height:90px;
+	overflow:hidden;
+} 
+
+
+
+h3.memberprofile-user-activities-title {
+	width:20%;
+	font-size:20px;
+	line-height:21px;
+	text-transform:uppercase;
+	text-align:left;
+	float:left;
+	font-weight:normal;
+	margin: 19px 6px 19px 10px;
+}
+
+.memberprofile-user-activities {
+	float:right;
+	width:70%;
+	margin: 12px 10px 12px 0px;
+}
+
+.memberprofile-user-content-box {
+	width:28%;
+	margin:20px 2%;
+	float:left;
+}
+
+h5.memberprofile-user-content-label {
+	margin-bottom:10px;
+	padding-bottom:3px;
+	border-bottom:1px dotted #a2a2a2;
+
+}
+
+.memberprofile-user-content-box address {
+	font-style:normal;
+	font-size:12px;
+	display:block;
+	line-height:1.5em;
+	margin-bottom:15px;
+}
+
+span.memberprofile-user-address-phone {
+	display:block;
+	font-size:12px;
+	line-height:1.5em;
+}
+
+
+
+.memberprofile-user-content-box dl dt {
+	font-weight:bold;
+	font-size:14px;
+}
+
+
+.memberprofile-edit-basic-info-btn,
+.memberprofile-edit-pref-btn {
+    display: block;
+    float: left;
+    font-size: 20px;
+    margin: 20px 35px 16px 35px;
+    text-align: center;
+    width: 120px;
+	padding:5px 0px;
+	border-bottom: 4px solid transparent;
+}
+
+.memberprofile-edit-basic-info-btn:hover,
+.memberprofile-edit-pref-btn:hover {
+	text-decoration:none !important;
+	border-bottom: 4px solid #a2a2a2;
+}
+
+.memberprofile-edit-section-active {
+	border-bottom: 4px solid #a2a2a2;
+	color:#a2a2a2 !important;
+	
+}
+
+.memberprofile-edit-pref-btn {
+    width:200px;
+}
+
+.memberprofile-form td {
+	padding:2px 3px
+}
+
+
+a.memberprofile-back-btn {
+	display:block;
+	margin:20px auto;
+	width:342px;
+	height:81px;
+	background:url(images/memberprofile-btn-backtodir.png) no-repeat 0 0;
+	text-indent:-9999px;
+	outline:0;
+}
+
+
+
+/****************************************************
+
+FRIEND LIST STYLING
+
+****************************************************/
+.memberprofile-user-add-to-friend-list {
+	display:block;
+	background: #FFFFFF;
+    clear: both;
+    padding: 20px;
+    top: 180px;
+    width: 400px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+	text-align:left;
+}
+
+h5.memberprofile-user-add-to-friend-list-title {
+	text-align:center;
+	border-bottom: 1px dotted #a2a2a2;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	font-weight:normal;
+	font-size:18px;
+}
+
+.memberprofile-user-firend-list-item {
+	height:27px;
+	padding:3px 0px;
+	margin:4px 0px;
+}
+
+a.memberprofile-friendlist-btn {
+	display:block;
+	float:right;
+	width:88px;
+	height:27px;
+	background:url(/custom/advpage/memprofile/images/memberprofile-btn-add-remove-friend.png) no-repeat 0 0;
+	text-indent:-9999px;
+	outline:0;
+}
+a.memberprofile-friendlist-btn-remove {
+	background-position: 0 top;
+}
+a.memberprofile-friendlist-btn-add {
+	background-position: 0 bottom;
+}
+
+
+.memberprofile-user-content-box h6 {
+    font-size: 13px;
+}
+.memberprofile-user-content-box dl {
+    margin-bottom: 10px;
+}
+.memberprofile-user-content-box dl dt {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 8px;
+}
+

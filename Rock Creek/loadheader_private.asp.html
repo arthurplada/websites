@@ -1,0 +1,100 @@
+<!--METADATA TYPE="typelib"
+	UUID="00000205-0000-0010-8000-00AA006D2EA4"
+	NAME="ADODB Type Library"
+-->
+
+<%
+'# grab query variables
+strDN = Request.QueryString("dName")
+strNS = Request.QueryString("Nsection")
+
+'#folder to look for pictures
+Whichfolder=server.mappath("/custom/headers/subpages/")
+'# build serverside path to document header
+DocumentHeader=(Whichfolder & "\document_" & strDN & ".jpg")
+'# build serverside path to nav section header
+NavSectionHeader=(Whichfolder & "\header_" & strNS & ".jpg")
+'# build serverside path to Default header
+DefaultHeader=(Whichfolder & "\header_default_private.jpg")
+
+
+
+Function writeDocumentBanner() 
+	'# create an image and read contents of the Document Photo, the serve photo to browser as jpeg
+	Set File = Server.CreateObject("ADODB.Stream")
+	File.Type = adTypeBinary	'#Defined from MetaData tag at top
+	File.Open
+	File.LoadFromFile (DocumentHeader)
+	'### To add support for additional image formats, just add in the appropriate
+	'### lines below with the MIME-types.
+	Response.ContentType = "image/jpg"
+	Response.BinaryWrite File.Read
+	File.Close
+End Function
+
+Function writeNavSectionBanner() 
+	'# document header photo does not exist so display nav section header photo instead.
+	'#response.write("File" & strDN & " does not exist!")
+	Set File = Server.CreateObject("ADODB.Stream")
+	File.Type = adTypeBinary	'#Defined from MetaData tag at top
+	File.Open
+	File.LoadFromFile (NavSectionHeader)
+	'### To add support for additional image formats, just add in the appropriate
+	'### lines below with the MIME-types.
+	Response.ContentType = "image/jpg"
+	Response.BinaryWrite File.Read
+	File.Close
+End Function
+
+Function writeDefaultBanner() 
+	'# document header photo does not exist so display nav section header photo instead.
+	'#response.write("File" & strDN & " does not exist!")
+	Set File = Server.CreateObject("ADODB.Stream")
+	File.Type = adTypeBinary	'#Defined from MetaData tag at top
+	File.Open
+	File.LoadFromFile (DefaultHeader)
+	'### To add support for additional image formats, just add in the appropriate
+	'### lines below with the MIME-types.
+	Response.ContentType = "image/jpg"
+	Response.BinaryWrite File.Read
+	File.Close
+End Function
+
+
+
+
+dim fs
+set fs=Server.CreateObject("Scripting.FileSystemObject")
+
+
+if strDN <> "" then
+	'# document name variable is not empty, so next see if a file exists with that name
+	if fs.FileExists(DocumentHeader)=true then
+		'# file exists so write out document banner and exit
+		Call writeDocumentBanner()
+	else if strNS <> "" And fs.FileExists(NavSectionHeader)=true then
+		'#document banner file does not exist so see if nav section is empty and if not write banner out
+		Call writeNavSectionBanner()
+	else 
+		'#document and nav section banners are empty so load header_default.jpg and write out
+		Call writeDefaultBanner()
+	end if
+	end if
+ 
+else if strNS <> "" and strDN = "" And fs.FileExists(NavSectionHeader)=true then
+	'# has navsection token but not document token so write nav section banner
+	'# ie this is probably a nav section page and not a document page because MRM is not writing in a document name
+	Call writeNavSectionBanner()
+else 
+	'# write default site banner if all else fails so it is not empty.
+	Call writeDefaultBanner()
+	
+end if
+end if
+
+set fs=nothing
+Set File = Nothing
+Set Folder = Nothing
+Set fso = Nothing
+%>
+
